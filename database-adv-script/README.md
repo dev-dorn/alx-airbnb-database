@@ -139,7 +139,7 @@ LEFT JOIN bookings b ON u.id = b.user_id
 GROUP BY u.id, u.name
 ORDER BY total_bookings DESC;
 ```
-### Total Bookings per User
+### Ranking Properties by Bookings
 **Objective:** Use window functions `RANK`, `ROW_NUMBER` to rank properties based on the total number of bookings
 
 ```sql
