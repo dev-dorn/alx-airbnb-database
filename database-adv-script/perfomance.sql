@@ -31,5 +31,4 @@ SELECT
 FROM bookings b
 JOIN users u ON b.user_id = u.id
 JOIN properties p ON b.property_id = p.id
-WHERE p.location = 'Nairobi'
-ORDER BY b.start_date DESC;
+AND b.total_price > 0;
